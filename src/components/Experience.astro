@@ -1,0 +1,41 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCIE = [
+  {
+    date: "Hypernoba labs",
+    title: "Hypernoba labs - completa · 3 meses ",
+    description:
+      "Android development and IOS - Scrum · Desarrollo de software · SQL · Diseño creativo · Diseño de software · Industria del software · Diseño de front-end · Lado del servidor Scrum · Desarrollo de software · SQL · Diseño creativo · Diseño de software · Industria del software · Diseño de front-end",
+    link: "https://www.linkedin.com/in/jesus-david-juvinao-perez-8a9352174/",
+  },
+  {
+    date: "Amaris Consulting - Abril 2022",
+    title: "Principal Frontend Full Stack  − Consultor de desarrollo de software - Bogota - Medellin",
+    description:
+      "Responsable de la plataforma alvi.cl & unimarc.cl, componentes y utilidades para la creación y desarrollo de aplicaciones web y android. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 20 equipos.",
+  },
+  {
+    date: "Smart-reportz - Full Stack  -  Android & Backend Developer",
+    title: "Principal Frontend Engineer  − Consultor de desarrollo de software - Bogota - Medellin",
+    description:
+      "Manejo de Docket y testing end to end, Nextjs, Android SDK, Expo Platform,  React-native, Cypress, Puppeteer, Scrum master implementacion de atomic desing, lidere un equipo de desarrollo en el area financiera para bancos de Londres.",
+  },
+  {
+    date: "Wow desarrollos Digitales - Desarrollador Frontend -  Android & Web Developer & Expo Platform",
+    title: "Principal Frontend Engineer  − Consultor de desarrollo de software - Bogota - Medellin",
+    description:
+      "Manejo de Flutter, Expo Platform, Java/Kotlin, Android SDK, Nextjs, React, MySQL, React Native, Desarrollo de aplicaciones contables, aplicaciones mobiles y PWA para la gestion contable para grandes empresas de la costa, E-commerce, Tiendas virtuales",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
