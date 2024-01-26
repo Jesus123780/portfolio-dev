@@ -25,12 +25,18 @@ import Git from "./icons/Git.astro"
 import Illustrator from "./icons/Illustrator.astro"
 import SQL from "./icons/SQL.astro"
 import Typescript from "./icons/Typescript.astro"
+import Photoshop from "./icons/Photoshop.astro"
 
 const TAGS = {
   Css: {
     name: "Css",
     class: "bg-[#003159] text-white",
     icon: Css,
+  },
+  Photoshop: {
+    name: "Photoshop",
+    class: "bg-[#003159] text-white",
+    icon: Photoshop,
   },
   Git: {
     name: "Git",
@@ -155,6 +161,14 @@ const TAGS = {
 }
 
 const PROJECTS = [
+  {
+    title: "Mockup  SMF Credito - Una plataforma virtual para gestionar creditos y tarejetas bancarias en Panama",
+    description:
+      "Illustrator, Photoshop, Figma",
+    link: "https://www.figma.com/file/vzpPkyJBRUehgLjSycpavc/CMF---Web-APP?type=design&node-id=2657-37114&mode=design",
+    image: "/projects/figma.png",
+    tags: [TAGS.FIGMA, TAGS.Illustrator, TAGS.Photoshop],
+  },
   {
     title: "Foodi app - Una plataforma virtual para gestionar ventas y facturas en tiempo real",
     description:
